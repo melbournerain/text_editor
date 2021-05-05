@@ -30,6 +30,7 @@ namespace TextEditorProject
 
         private void button2_Click(object sender, EventArgs e)
         {
+            saveFileDialog1.Filter = "Text files (*.txt) | *.txt";
             if (saveFileDialog1.ShowDialog() != DialogResult.Cancel)
             {
                 string fileName = saveFileDialog1.FileName;
